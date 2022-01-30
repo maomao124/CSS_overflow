@@ -1,0 +1,45 @@
+/*
+  Project name(项目名称)：CSS_overflow 
+  File name(文件名): t
+  Author(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/1/30 
+  Time(创建时间)： 22:29
+  Version(版本): 1.0
+  Description(描述)：
+  1. overflow
+为了能更好的处理溢出的内容，CSS 中提供了一个名为 overflow 的属性，该属性可以设置如何处理溢出元素内容区的内容
+值	    描述
+visible	默认值，对溢出的内容不做处理，内容会在元素内容区之外显示
+hidden	隐藏溢出元素内容区的内容
+scroll	隐藏溢出元素内容区的内容，并在元素的左侧和下方分别创建一个滚动条，通过滑动滚动条可以查看元素中的所有内容
+auto	如果出现内容溢出，则会在元素左侧创建一个滚动条，通过滑动滚动条可以查看元素中的全部内容
+inherit	从父元素继承 overflow 属性的值
+
+2. overflow-x、overflow-y
+在 CSS3 中还提供了 overflow-x 和 overflow-y 两个属性，它们的作用与 overflow 属性相似，属性的可选值与 overflow 属性相同，其中：
+overflow-x：设置当元素内容区的内容在水平方向上溢出元素时如何处理溢出的内容；
+overflow-y：设置当元素内容区的内容在垂直方向上溢出元素时如何处理溢出的内容。
+ */
+
+
+div {
+    width: 550px;
+    height: 100px;
+    margin-top: 20px;
+    border: 1px solid red;
+}
+
+div.hidden {
+    overflow: hidden;
+}
+
+div.scroll {
+    overflow: scroll;
+}
+
+div.auto {
+    overflow: auto;
+}
+    
